@@ -17,6 +17,7 @@ players.
 
 ## Premium Features
 
+- No ads
 - Kernel mode injection
 - Many more coming soon
 
