@@ -1,104 +1,159 @@
-# Mystic-GI v0.3.7 now supports Genshin Impact 7.0
+# Mystic-GI v0.3.8 — Genshin Impact 7.0
 
-Mystic is a single-player game enhancer for a certain anime game, built around
-its own metadata dumper rather than a borrowed offset list.
+Mystic is a single-player game enhancer focused on reducing repetitive
+exploration, combat and dialogue tasks.
 
-Most enhancers for this game are a list of addresses copied from someone else's
-dump. That list rots the moment the game updates, and when it does there is no
-way to tell a stale address from a working one until something misbehaves in a
-way that is hard to trace. Mystic takes the other route: it reads the game's own
-protected metadata, recovers what every class, method and field actually is, and
-generates the addresses it uses from that. Updating for a new game build is a
-capture and one command, not an afternoon of re-hunting.
+Unlike tools that depend entirely on manually maintained address lists, Mystic
+derives the information it needs from the game's runtime metadata. This makes
+updating for new game versions faster and reduces the chance of silently using
+outdated addresses.
 
-The enhancer half is deliberately narrow. It is aimed at solo play — cutting the
-repetition out of exploration and dialogue — not at anything involving other
-players.
+Mystic is designed for solo play. It does not provide features intended for
+competitive or cooperative advantages.
 
-## Premium Features
+## Installation
 
-- No ads
-- Kernel mode injection
-- Many more coming soon
+1. Download the latest installer from the GitHub Releases page.
+2. Run `Mystic Launcher_0.3.8_x64-setup.exe`.
+3. Open Mystic Launcher and configure the game path if it is not detected
+   automatically.
+4. Start the game through the launcher.
 
-## Free Features
+Mystic currently supports 64-bit Windows.
 
-### Player
+## Access
+
+The free version uses an ad-supported daily pass. Premium access removes the
+daily ad requirement and enables kernel-mode injection.
+
+### Premium features
+
+- No daily advertisement
+- Kernel-mode injection
+
+### Free features
+
+#### Player
 
 - God mode
 - No fall damage
-- NoClip, with a speed control and an option to suppress the movement animation
+- NoClip
+  - Adjustable movement speed
+  - Option to suppress the movement animation
 
-### Combat
+#### Combat
 
 - No skill cooldown
 - Infinite burst energy
-- Multi hit, with a configurable number of hits per attack
-- Kill aura, with damage and range controls
+- Multiple hits, with a configurable number of hits per attack
+- Kill aura, with configurable damage and range
 
-### World
+#### World
 
-- Auto loot, with an adjustable delay and range
-- Extended pickup reach, so distant items enter the interaction list
-- Vacuum, which draws nearby loot towards you
-- Pickup filters for drops, harvestables, wildlife, chests, waypoints and
-  statues
-- Auto dialogue, with automatic option selection
-- Skip and fast-forward for cutscenes, with an adjustable dialogue speed and
-  advance delay
+- Auto loot, with adjustable delay and range
+- Extended pickup reach, allowing distant items to enter the interaction list
+- Loot vacuum, which draws nearby loot towards the player
+- Pickup filters for:
+  - Drops
+  - Harvestables
+  - Wildlife
+  - Chests
+  - Waypoints
+  - Statues
+- Automatic dialogue advancement
+- Optional automatic dialogue-choice selection
+- Option to leave important dialogue choices to the player
+- Cutscene skipping and fast-forward controls
+- Adjustable dialogue speed and advancement delay
 
-### Teleport
+#### Teleport
 
-- Teleport to the tracked quest marker
-- Teleport to a marker placed on the map
-- Travel to a point clicked on the map, with an arrival height control and an
-  optional server-side travel path
+- Teleport to the currently tracked quest marker
+- Teleport to a marker placed on the in-game map
+- Travel to a point selected on the map
+- Adjustable arrival height
+- Optional server-synchronized travel path
 
-### Map
+#### Map
 
-- Interactive map markers drawn in the world and on the game's own map
-- Names, distances, icon size, opacity and a maximum draw distance
-- Marker data is fetched and cached by the launcher
+- Interactive markers displayed in the world and on the game's map
+- Configurable marker names, distances, icon size and opacity
+- Configurable maximum drawing distance
+- Marker data downloaded and cached by the launcher
 
-### ESP
+#### ESP
 
-- Entity boxes with a maximum draw distance
-- Tracers, drawn from either the bottom of the screen or its centre
+- Entity boxes with a configurable maximum drawing distance
+- Tracers drawn from the bottom or centre of the screen
 - Distance labels
-- Real box sizes taken from the renderer's bounds
-- An in-world picker for choosing which kinds of entity to show
+- Box dimensions derived from renderer bounds
+- In-world entity-type picker
 
-### Visuals
+#### Visuals
 
-- Field of view control
+- Field-of-view control
 - FPS unlock with a configurable limit
-- No fog
-- Chest indicator, forced to show around the player
+- Fog removal
+- Forced nearby chest indicators
 
-### Interface
+#### Interface
 
-- An external overlay for every setting, usable while the game has focus
-- An optional in-game panel
-- Rebindable hotkeys, including mouse buttons, for the features worth toggling
-  mid-fight
-- Both interfaces stay hidden until the game has finished loading and a
-  character has spawned
+- External overlay that remains usable while the game has focus
+- Optional in-game control panel
+- Rebindable keyboard and mouse hotkeys
+- Automatic interface hiding while the game is still loading
+- Settings shared between Standard and Kernel injection modes
 
-## Status
+## Security and updates
 
-Mystic targets the 7.0 version of the game. The feature list above is what is
-implemented and working; anything not listed is not implemented yet rather than
-partially done.
+Mystic v0.3.8 introduces several launcher and update-security improvements:
 
-## Legal
+- The launcher downloads a mod built specifically for its current version.
+- Downloaded mod files are verified against a fresh, cryptographically signed
+  hash before being loaded.
+- Damaged, replaced or outdated files are downloaded again automatically.
+- Protected downloads use a device identity in addition to the machine ID.
+- Premium sessions periodically renew a signed access lease.
+- Revoked premium access stops working during an active session.
+- Free daily-pass sessions are allowed to finish normally after midnight. A new
+  pass is required the next time the game starts.
 
-Mystic is provided for research and single-player use. It is not affiliated with
-or endorsed by the game's developer or publisher. Using it may violate the
-game's terms of service; that risk is yours to weigh.
+Premium users upgrading from v0.3.7 must enter their existing premium key once
+more. This enrolls the new device identity and does not consume or reset the
+key.
 
-Keep feature values within a plausible range. Settings far outside what the game
-itself would produce are the fastest way to get an account banned. This project
-is new and its detection rate has not been tested, so treat any account you use
-it on as one you are prepared to lose.
+## Current compatibility
 
-For anything else, open an issue.
+Mystic v0.3.8 targets Genshin Impact 7.0.
+
+The features listed above are implemented for the supported game version.
+Updates to the game may temporarily disable individual features until Mystic
+has been updated and compatibility has been verified.
+
+Features that are not listed should be considered unavailable rather than
+partially implemented.
+
+## Important notice
+
+Mystic is an independent project and is not affiliated with, authorized by or
+endorsed by HoYoverse or Cognosphere.
+
+Using third-party software with the game may violate its terms of service and
+may result in account restrictions or permanent account loss. No configuration,
+feature or injection mode can be guaranteed safe or undetectable.
+
+Use Mystic entirely at your own risk, preferably only with an account you are
+prepared to lose.
+
+## Support
+
+If you encounter a reproducible problem:
+
+1. Confirm that you are using the latest Mystic release.
+2. Confirm that the installed game version is supported.
+3. Check existing GitHub issues for the same problem.
+4. Open a new issue with the launcher version, game version and steps needed to
+   reproduce the problem.
+
+Do not include premium keys, device files, account credentials or other private
+information in issue reports.
