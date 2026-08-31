@@ -1,4 +1,4 @@
-# Mystic v0.3.3 now supports Genshin Impact 7.0
+# Mystic-GI v0.3.7 now supports Genshin Impact 7.0
 
 Mystic is a single-player game enhancer for a certain anime game, built around
 its own metadata dumper rather than a borrowed offset list.
