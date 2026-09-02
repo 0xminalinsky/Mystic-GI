@@ -1,4 +1,4 @@
-# Mystic-GI v0.3.8 — Genshin Impact 7.0
+# Mystic-GI v0.3.14 — Genshin Impact 7.0
 
 Mystic is a single-player game enhancer focused on reducing repetitive
 exploration, combat and dialogue tasks.
@@ -30,6 +30,7 @@ daily ad requirement and enables kernel-mode injection.
 
 - No daily advertisement
 - Kernel-mode injection
+- More robust against anti cheat
 
 ### Free features
 
