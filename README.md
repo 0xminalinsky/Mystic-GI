@@ -14,7 +14,7 @@ competitive or cooperative advantages.
 ## Installation
 
 1. Download the latest installer from the GitHub Releases page.
-2. Run `Mystic Launcher_0.3.8_x64-setup.exe`.
+2. Run `Mystic Launcher_0.3.14_x64-setup.exe`.
 3. Open Mystic Launcher and configure the game path if it is not detected
    automatically.
 4. Start the game through the launcher.
