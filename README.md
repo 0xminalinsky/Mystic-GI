@@ -26,7 +26,7 @@ Mystic currently supports 64-bit Windows.
 The free version uses an ad-supported daily pass. Premium access removes the
 daily ad requirement and enables kernel-mode injection.
 
-### Premium features
+### Sponsor features
 
 - No daily advertisement
 - Kernel-mode injection
