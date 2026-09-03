@@ -146,6 +146,9 @@ feature or injection mode can be guaranteed safe or undetectable.
 Use Mystic entirely at your own risk, preferably only with an account you are
 prepared to lose.
 
+## Sponsor
+- Im alone behind this project so a support is loved !
+[Ko-fi/0xminalinsky](https://ko-fi.com/0xminalinsky)
 ## Support
 
 If you encounter a reproducible problem:
