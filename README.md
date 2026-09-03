@@ -107,7 +107,7 @@ daily ad requirement and enables kernel-mode injection.
 
 ## Security and updates
 
-Mystic v0.3.8 introduces several launcher and update-security improvements:
+Mystic v0.3.14 introduces several launcher and update-security improvements:
 
 - The launcher downloads a mod built specifically for its current version.
 - Downloaded mod files are verified against a fresh, cryptographically signed
@@ -125,7 +125,7 @@ key.
 
 ## Current compatibility
 
-Mystic v0.3.8 targets Genshin Impact 7.0.
+Mystic v0.3.14 targets Genshin Impact 7.0.
 
 The features listed above are implemented for the supported game version.
 Updates to the game may temporarily disable individual features until Mystic
